@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site AI Assistant Settings</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Site AI Assistant Settings</h1>
+        <div class="form-group">
+            <label for="api-key">OpenAI API Key:</label>
+            <input type="text" id="api-key" placeholder="Enter your OpenAI API key">
+        </div>
+        <div class="form-group">
+            <label for="model-select">Select Model:</label>
+            <select id="model-select">
+                <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                <option value="gpt-4">GPT-4</option>
+                <option value="gpt-4-turbo-preview">GPT-4 Turbo</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="language-select">AI Response Language:</label>
+            <select id="language-select">
+                <option value="auto">Auto</option>
+                <option value="zh">中文</option>
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="de">Deutsch</option>
+                <option value="ja">日本語</option>
+                <option value="ko">한국어</option>
+                <option value="ru">Русский</option>
+                <option value="ar">العربية</option>
+                <option value="pt">Português</option>
+                <option value="it">Italiano</option>
+                <option value="nl">Nederlands</option>
+                <option value="hi">हिन्दी</option>
+                <option value="tr">Türkçe</option>
+            </select>
+        </div>
+        <a href="quick_actions.html" class="button">Manage Quick Actions</a>
+        <button id="save-button">Save</button>
+        <p id="status"></p>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>
